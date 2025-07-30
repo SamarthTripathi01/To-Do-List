@@ -28,10 +28,12 @@ Theme preference saved across page reloads
 Fully responsive design (mobile, tablet, desktop)
 
 ## 📁 File Structure
+```
 todo-app/
 ├── index.html       # Main HTML file
 ├── style.css        # Styling for the app
 └── script.js        # Application logic
+```
 ## 🔧 Technologies Used
 Tech	Purpose
 HTML5	Page structure
@@ -72,8 +74,10 @@ Font sizes adjust accordingly
 
 ## 💾 Data Persistence
 All tasks and theme settings are stored using:
+```
 localStorage.setItem('todos', JSON.stringify(todos));
 localStorage.getItem('todos');
+```
 Tasks persist even after refreshing or closing the browser
 
 Dark mode state is saved under the key theme
