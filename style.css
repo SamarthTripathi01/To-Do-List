@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #f4f4f4;
+  --text: #222;
+  --card: #fff;
+  --accent: #007bff;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --text: #f0f0f0;
+  --card: #2e2e2e;
+  --accent: #00bfff;
+}
+
+.app {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#todoForm {
+  display: flex;
+  margin: 40px 0;
+}
+
+#todoInput {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid var(--accent);
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+#todoForm button {
+  padding: 10px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.filters button {
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filters .active {
+  background: var(--accent);
+  color: white;
+}
+
+#todoList {
+  list-style: none;
+}
+
+.todo-item {
+  background: var(--card);
+  margin: 10px 0;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-left: 5px solid transparent;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  border-left: 5px solid green;
+}
+
+.todo-item span {
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-item button {
+  background: red;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+#themeToggle {
+    padding: 5px;
+}
+
+#foot {
+    position: fixed;
+    bottom: 20px;
+    opacity: 0.4;
+}

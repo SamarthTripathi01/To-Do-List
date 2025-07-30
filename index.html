@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>📝 To-Do List</h1>
+      <button id="themeToggle">🌓</button>
+    </header>
+
+    <form id="todoForm">
+      <input type="text" id="todoInput" placeholder="What do you need to do?" required />
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="todoList"></ul>
+
+    <footer>
+      <p id="foot">Built by 💻 STsamarth</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
