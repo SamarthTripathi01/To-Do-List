@@ -29,7 +29,6 @@ Fully responsive design (mobile, tablet, desktop)
 
 ## 📁 File Structure
 ```
-todo-app/
 ├── index.html       # Main HTML file
 ├── style.css        # Styling for the app
 └── script.js        # Application logic
