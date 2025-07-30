@@ -5,6 +5,7 @@
 }
 
 body {
+  user-select: none;
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--bg);
   color: var(--text);
